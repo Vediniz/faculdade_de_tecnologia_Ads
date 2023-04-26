@@ -1,0 +1,38 @@
+- Areas pra seguir
+- Dicas de como estudar
+
+--------------------
+Em quais areas o profissional de ADS pode atuar? 
+Existem algumas áreas nas quais o profissional de ADS pode atuar no mercado de trabalho nos dias atuais, com muitas delas estando em ascensão, dentre elas temos as seguintes:
+
+- Desenvolvimento de Software: Nessa área, o profissional tem como principal foco a atividade de criar e programas de computação, como por exemplo ferramentas do dia-a-dia que usamos em nossos computadores ou celulares. Para o desenvolvedor é necessário saber conduzir um projeto, desde a concepção e o entendimento das necessidades do cliente;
+
+- Administração de Banco de Dados: Com o crescimento da geração de dados ao longo dos últimos anos, também aumenta a demanda por profissionais especializados na área, e o foco de um administrador de banco de dados é identificar, dividir em setores e transformar esse grande volume de dados do mundo através de diferentes técnicas e ferramentas para dar sentido a eles;
+
+- Administração de Redes: Na Administração de Redes, o objetivo do profissional é elaborar projetos de redes, além de de avaliar e validar projetos criados por terceiros. Os envolvidos nessa área tem a a capacitação para realizar o gerenciamento de redes de computadores bem como os recursos computacionais relacionados direta ou indiretamente;
+
+- Produção de Software: O profissional Analista nessa área tem como dever a participação nas etapas de arquitetura, documentação desenvolvimento, testes e evolução de sistemas de um software;
+
+- Infraestrutura de TI: Aqui o profissional exerce o gerenciamento da Infraestrutura de TI consiste na coordenação de todos os recursos, sistemas, plataformas, funcionários e ambientes relacionados, como por exemplo: sistema operacional, gerenciamento da nuvem (servidores), virtualização, automação, etc. Também cabe ao profissional o controle sobre os componentes para gerar tal estrutura, como hardware, software, rede, além de um sistema operacional e armazenamento de dados;
+-----------------------
+Sobre o Curso na Fatec Americana:
+Duração: 6 semestres
+Carga Horária: 
+2400 horas 
+240 horas de Estágio Curricular
+160 horas de Trabalho de Graduação
+
+>>>>>GRADE 
+--------------------
+Linguagens de Programação: 
+Linguagens de programação são como idiomas, e esses são utilizados para escrever códigos e passar informações para o computador. 
+
+As lingaugens abordadas na Fatec Americana são: 
+- C 
+A linguagem C pode ser usada para diversas tarefas como: Editores de imagem e vídeo, sistemas de automação, sistemas operacionais. 
+
+- C# 
+C# é uma linguagem orientada a objetos e pode ser usada em: Aplicações web, desktop, mobile e jogos eletrônicos.
+
+- Python 
+Python é um linguagem orientada a objetos e muito usada em: data science, machine learning, desenvolvimento web e desenvolvimentpo de aplicativos.

@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Toni"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-08-16 10:00:10 "/>
+        <attribute name="created" value="VG9uaTtERVNLVE9QLTdDOUNEQkQ7MjAyMS0wOC0xMzsiMDQ6NTE6MjUgIjsyNjMw"/>
+        <attribute name="edited" value="VG9uaTtERVNLVE9QLTdDOUNEQkQ7MjAyMS0wOC0xNjsiMTA6MDA6MTAgIjs0OzI3Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="pe&#231;as" type="Integer" array="False" size=""/>
+            <declare name="sexo" type="String" array="False" size=""/>
+            <declare name="maior" type="Real" array="False" size=""/>
+            <declare name="f" type="Integer" array="False" size=""/>
+            <assign variable="f" expression="0"/>
+            <declare name="mh" type="Real" array="False" size=""/>
+            <declare name="mf" type="Real" array="False" size=""/>
+            <assign variable="mf" expression="0"/>
+            <assign variable="mh" expression="0"/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <assign variable="m" expression="0"/>
+            <declare name="sal" type="Real" array="False" size=""/>
+            <declare name="vprod" type="Real" array="False" size=""/>
+            <assign variable="vprod" expression="0"/>
+            <assign variable="sal" expression="1200"/>
+            <declare name="thpe&#231;as" type="Integer" array="False" size=""/>
+            <assign variable="thpe&#231;as" expression="0"/>
+            <declare name="tfpe&#231;as" type="Integer" array="False" size=""/>
+            <assign variable="tfpe&#231;as" expression="0"/>
+            <assign variable="maior" expression="0"/>
+            <declare name="tsal" type="Real" array="False" size=""/>
+            <assign variable="tsal" expression="0"/>
+            <declare name="tpe&#231;as" type="Integer" array="False" size=""/>
+            <assign variable="tpe&#231;as" expression="0"/>
+            <declare name="pront" type="Integer" array="False" size=""/>
+            <assign variable="pront" expression="0"/>
+            <declare name="prontuario" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe a quantidade de Funcion&#225;rios&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;Informe o Prontu&#225;rio do Funcion&#225;rio..&quot;" newline="True"/>
+                <input variable="prontuario"/>
+                <output expression="&quot;Informe o sexo da Pessoa&quot;" newline="True"/>
+                <input variable="sexo"/>
+                <output expression="&quot;Informe a quantidade de pe&#231;as Produzidas&quot;" newline="True"/>
+                <input variable="pe&#231;as"/>
+                <assign variable="sal" expression="0"/>
+                <if expression="pe&#231;as &lt;= 30">
+                    <then>
+                        <assign variable="sal" expression="1200"/>
+                    </then>
+                    <else>
+                        <assign variable="sal" expression="1200"/>
+                        <if expression="pe&#231;as &gt;= 31 &amp;&amp; pe&#231;as &lt;=35">
+                            <then>
+                                <assign variable="vprod" expression="(pe&#231;as - 30)*36"/>
+                            </then>
+                            <else>
+                                <if expression="pe&#231;as &gt; 35">
+                                    <then>
+                                        <assign variable="vprod" expression="(pe&#231;as - 35)* 60"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="sexo = &quot;M&quot; or sexo = &quot;m&quot;">
+                    <then>
+                        <assign variable="m" expression="m +1"/>
+                        <assign variable="thpe&#231;as" expression="thpe&#231;as + pe&#231;as"/>
+                    </then>
+                    <else>
+                        <assign variable="f" expression="f+1"/>
+                        <assign variable="tfpe&#231;as" expression="tfpe&#231;as + pe&#231;as"/>
+                    </else>
+                </if>
+                <assign variable="sal" expression="sal+vprod"/>
+                <assign variable="tpe&#231;as" expression="tpe&#231;as + pe&#231;as"/>
+                <assign variable="tsal" expression="tsal + sal"/>
+                <if expression="sal &gt; maior">
+                    <then>
+                        <assign variable="pront" expression="prontuario"/>
+                        <assign variable="maior" expression="sal"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot; O prontu&#225;rio do Funcion&#225;rio&quot; &amp; prontuario &amp; &quot;Salario&quot; &amp; sal" newline="True"/>
+            </for>
+            <output expression="&quot;Total de Pagto de Salario da Fabrica &quot; &amp; tsal" newline="True"/>
+            <output expression="&quot; N&#250;mero Total de Pe&#231;as fabricadas &quot; &amp; tpe&#231;as" newline="True"/>
+            <assign variable="mh" expression="thpe&#231;as/m"/>
+            <output expression="&quot; A Media de pe&#231;as Fabricadas pelos Homens..&quot; &amp; mh" newline="True"/>
+            <assign variable="mf" expression="tfpe&#231;as/f"/>
+            <output expression="&quot;A media de Pe&#231;as Fabricadas pelas Mulheres&quot; &amp; mf" newline="True"/>
+            <output expression="&quot;O funcion&#225;rio de Maior salario&quot; &amp; maior &amp; &quot;Prontuario&quot; &amp; pront" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
